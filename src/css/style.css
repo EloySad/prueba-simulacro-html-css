@@ -1,0 +1,131 @@
+/* Nombre Completo: Johan Eloy Sanchez Hernandez
+Clan: 
+fecha: 03/04/2024
+ */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* hacemos un reinicio de formatos de la pagina para evitar errores visuales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* rooteamos colores y demas propiedades de uso común en los estilos*/
+:root {
+    --color-titulos: white;
+    --negro-transparente: rgb(0, 0, 0, 0.6);
+}
+
+/* clase para ajustar el banner */
+.banner {
+    background-image: url(../../public/img/Mis\ viajes\ \(4\).png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* clase para ajustar la barra de navegacion y sus iconos */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--negro-transparente);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: var(--color-titulos);
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar figure img {
+    width: 50px;
+}
+
+.navbar figure nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar figure nav a img {
+    width: 25px;
+}
+
+/* clase para ajustar la sección de viajes principales */
+.viajes-pp {
+    display: flex;
+    gap: 5px;
+    width: 80%;
+    justify-content: center;
+    padding: 1% 10%;
+}
+
+.viajes-pp figure {
+    position: relative;
+}
+
+.viajes-pp figure img {
+    width: 350px;
+    height: 300px;
+}
+
+.viajes-pp figure div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--color-titulos);
+    position: absolute;
+    background-color: var(--negro-transparente);
+    bottom: 3px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#colum-img{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#wrap-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#img-grande{
+    width: 98%;
+}
+#img-grande img{
+    width: 100%;
+}
+.articulos-add{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1% 4%;
+}
+.articulos-add figure img {
+    width: 250px;
+    height: 150px;
+}
+
+/* clase para ajustar footer */
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    padding: 5% 0% 10% 60%;
+    color: var(--color-titulos);
+}
